@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Dhamyr Website Loading Animation</title>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="stylesheet.css">
+ 
+</head>
+<body>
+   <div class="loading-screen">
+      <div class="bars-container">
+         <div class="bar bar-01"></div>
+         <div class="bar bar-02"></div>
+         <div class="bar bar-03"></div>
+         <div class="bar bar-04"></div>
+         <div class="bar bar-05"></div>
+         <div class="bar bar-06"></div>
+         <div class="bar bar-07"></div>
+         <div class="bar bar-08"></div>
+         <div class="bar bar-09"></div>
+         <div class="bar bar-10"></div>
+         <div class="bar bar-11"></div>
+         <div class="bar bar-12"></div>
+         <div class="bar bar-13"></div>
+         <div class="bar bar-14"></div>
+         <div class="bar bar-15"></div>
+         <div class="bar bar-16"></div>
+         <div class="bar bar-17"></div>
+         <div class="bar bar-18"></div>
+         <div class="bar bar-19"></div>
+         <div class="bar bar-20"></div>
+         <div class="bar bar-21"></div>
+         <div class="bar bar-22"></div>
+         <div class="bar bar-23"></div>
+         <div class="bar bar-24"></div>
+         <div class="bar bar-25"></div>
+      </div>
+      <div class="loader">
+         <div class="loader-txt"></div>
+      </div>
+   </div>
+   <div class="container">
+      <h1>Our brand is all about brutalist minimalism, blending industrial aesthetics with modern, clean lines. We focus on creating bold, impactful designs that are both simple and sophisticated. Every element is meticulously crafted to reflect strength, clarity, and refined taste, making a statement through understated elegance. It's a brand for those who appreciate high-quality, minimalist design with an edge.</h1>
+   </div>
+   <script>
+      TweenMax.to(".loader", 2, {
+         opacity: 0,
+         ease: Expo.easeOut,
+         delay: 2.7
+      });
+
+      TweenMax.staggerTo(".bar", 0.3, {
+         height: "0%",
+         ease: Power1.easeIn,
+         delay: 3.5
+      }, 0.015);
+   </script>
+</body>
+</html>
